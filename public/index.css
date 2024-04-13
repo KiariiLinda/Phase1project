@@ -1,0 +1,231 @@
+*{
+    margin:0;
+    padding: 0;
+}
+#navbar{
+    width: 100%;
+    height: 70px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#navbar > p > a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#container{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    width: 65%;
+    margin-bottom: 30px;
+}
+#sidebar{
+    width: 30%;
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    height: 200px;
+    text-align: center;
+    height: 300px;
+    margin-top: 20px;
+}
+#sortByPrice{
+  color: blue;
+  font-weight: 700;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#sortByKms{
+  color: blue;
+  font-weight: 700;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+
+}
+#FilterByBrand{
+  color: blue;
+  font-weight: 700;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+
+}
+.image{
+    width: 200px;
+}
+.cards{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;    
+    padding: 25px 10px;
+    text-align: center;
+}
+.deleteBtn{
+    color: red;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin-right: 5px;
+    background-color: white;
+    border: 2px solid red;
+    cursor: pointer;
+}
+.deleteBtn:hover{
+  color: white;
+  background-color: red;
+}
+
+
+ .editBtn{
+    color: blue;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin-left: 5px;
+    margin-top: 10px;
+    background-color: white;
+    border: 2px solid blue;
+}
+.editBtn:hover{
+  color: white;
+  background-color: blue;
+}
+.modal {
+    /* display: none; Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20rem; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .EditFormTag{
+    width: 90%;
+    padding: 20px;
+    border: 1px solid teal;
+  }
+
+  .editBrandInput,.EditPriceInput, .editImageInput{
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+.editSaveBtn{
+    color: teal;
+    font-weight: 700;
+     padding: 10px 15px;
+     width: 97.7%;
+     cursor: pointer;
+}
+
+@media (min-width: 300px) {
+  #container{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    width: 65%;
+    margin-bottom: 30px;
+  }
+  #sortByPrice{
+    color: blue;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  
+  #sortByKms{
+    color: blue;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    margin-top: 20px;
+  
+  }
+  #FilterByBrand{
+    color: blue;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 11px;
+    margin-top: 20px;
+  
+  }
+}
+
+@media (min-width: 600px) {
+  #container{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width: 65%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 900px) {
+  #container{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    width: 65%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #container{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    width: 65%;
+    margin-bottom: 30px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.page-link {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #ccc;
+  color: #fff;
+}
